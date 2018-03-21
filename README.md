@@ -9,13 +9,15 @@ keiba_url_getter」リポジトリで作成したCSVを元にスクレイピン�
 *****
 #### 動作確認済み構成
 
-OS ：Ubuntu16.0.4 LTS 64bit
+OS    ：Ubuntu16.0.4 LTS 64bit
 
-CPU：core i3 540
+python：Python3.5.3、Python3.6.3
 
-RAM：8GB
+CPU   ：core i3 540
 
-LAN：有線
+RAM   ：8GB
+
+LAN   ：有線
 
 ※ 競馬データを全件取得する場合、処理を完了するのに７日以上かかり
  　RAMを圧迫するので、8GBは必須。
