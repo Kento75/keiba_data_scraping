@@ -72,10 +72,10 @@ class PredictSpider(CrawlSpider):
             # 性別
             item['Sex'] = re.sub(r'[0-9a-zA-Z]|\n', '', re.sub(r'\/.*', '', div.select('./td[4]/span/text()').extract()[0]))
             # 年齢
-            item['Age'] =  re.sub(r'[^0-9]', '', re.sub(r'\/.*', '', div.select('./td[4]/span/text()').extract()[0]))
+            item['Age'] = re.sub(r'[^0-9]', '', re.sub(r'\/.*', '', div.select('./td[4]/span/text()').extract()[0]))
             # 馬体重
             ch_horse_weight = re.sub(r'\(.*', '', re.sub(r'\n[^0-9a-zA-Z]{1,2}[0-9]{1,2}\/', '', div.select('./td[4]/span/text()').extract()[0]))
-            if ch_horse_weight is '-':
+            if ch_horse_weight is '-' or ch_horse_weight is ' - ':
                 item['Horse_weight'] = '0'
             else:
                 item['Horse_weight'] = ch_horse_weight
@@ -89,7 +89,7 @@ class PredictSpider(CrawlSpider):
 
             # タイム
             ch_time = re.sub(r'\n', '', div.select('./td[5]/text()').extract()[0])
-            if len(ch_time) == 6:
+            if len(ch_time) >= 6:
                 item['Time'] = float(ch_time[2:]) + 60
             else:
                 item['Time'] = ch_time
