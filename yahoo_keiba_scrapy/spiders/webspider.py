@@ -49,6 +49,9 @@ class PredictSpider(CrawlSpider):
         # レース名
         race_name_d = re.sub(r'\s.*', '', hxs.select('/html/head/meta[7]/@content')[0].extract())
 
+        # 距離
+        distance_d = re.sub(r'\n|[^0-9]|\s', '', hxs.select('//*[@id="raceTitMeta"]/text()').extract_first())
+
         # テーブルヘッダを一ずつ取得してテーブルデータをitemに保存する
         for div in divs:
             item = YahooKeibaItem()
@@ -60,6 +63,8 @@ class PredictSpider(CrawlSpider):
             item['Race_no'] = race_no_d
             # レース名
             item['Race_name'] = race_name_d
+            # 距離
+            item['Distance'] = distance_d
             # 着順
             ch_order_of_finish = re.sub(r'\n|\s', '', div.select('./td[1]/text()').extract()[0])
             item['Order_of_finish'] = ch_order_of_finish
