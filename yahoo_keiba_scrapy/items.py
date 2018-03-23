@@ -13,6 +13,7 @@ class YahooKeibaItem(Item):
     Venue = Field()
     Race_no = Field()
     Race_name = Field()
+    Surface = Field()
     Distance = Field()
     Order_of_finish = Field()
     Frame_number = Field()

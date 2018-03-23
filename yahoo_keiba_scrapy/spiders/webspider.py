@@ -48,7 +48,8 @@ class PredictSpider(CrawlSpider):
         race_no_d = re.sub(r'\n|[^0-9]|\s', '', hxs.select('// *[ @ id = "raceNo"]/text()').extract_first())
         # レース名
         race_name_d = re.sub(r'\s.*', '', hxs.select('/html/head/meta[7]/@content')[0].extract())
-
+        # コース種別(ダート、芝)
+        surface_d = re.sub(r' +', '', re.sub(r'・.*', '', hxs.select('//*[@id="raceTitMeta"]/text()').extract_first()))
         # 距離
         distance_d = re.sub(r'\n|[^0-9]|\s', '', hxs.select('//*[@id="raceTitMeta"]/text()').extract_first())
 
@@ -63,6 +64,8 @@ class PredictSpider(CrawlSpider):
             item['Race_no'] = race_no_d
             # レース名
             item['Race_name'] = race_name_d
+            # コース種別(ダート、芝)
+            item['Surface'] = surface_d
             # 距離
             item['Distance'] = distance_d
             # 着順
@@ -79,14 +82,15 @@ class PredictSpider(CrawlSpider):
             # 年齢
             item['Age'] = re.sub(r'[^0-9]', '', re.sub(r'\/.*', '', div.select('./td[4]/span/text()').extract()[0]))
             # 馬体重
-            ch_horse_weight = re.sub(r'\(.*', '', re.sub(r'\n[^0-9a-zA-Z]{1,2}[0-9]{1,2}\/', '', div.select('./td[4]/span/text()').extract()[0]))
-            if ch_horse_weight is '-' or ch_horse_weight is ' - ':
+            ch_horse_weight = re.sub(r'\s-\s', '', re.sub(r'\(.*', '', re.sub(r'\n[^0-9a-zA-Z]{1,2}[0-9]{1,2}\/', '', div.select('./td[4]/span/text()').extract()[0])))
+
+            if ch_horse_weight is '-':
                 item['Horse_weight'] = '0'
             else:
                 item['Horse_weight'] = ch_horse_weight
 
             # 体重増減
-            ch_d_horse_weight = re.sub(r'[^0-9\-]', '', re.sub(r'\n.*\(', '', div.select('./td[4]/span/text()').extract()[0]))
+            ch_d_horse_weight = re.sub(r'\s-\s', '', re.sub(r'[^0-9\-]', '', re.sub(r'\n.*\(', '', div.select('./td[4]/span/text()').extract()[0])))
             if ch_d_horse_weight in '-':
                 item['D_horse_weight'] = 0
             else:
@@ -106,7 +110,15 @@ class PredictSpider(CrawlSpider):
                 item['Margin'] = ''
 
             # 上り3F
-            item['Time_3F'] = re.sub(r'[^0-9\.]', '', div.select('./td[6]/span/text()').extract()[0])
+            #item['Time_3F'] = re.sub(r'[^0-9\.]', '', div.select('./td[6]/span/text()').extract()[0])
+
+            ch_time_3f = re.sub(r'[^0-9\.]', '', div.select('./td[6]/span/text()').extract()[0])
+
+            if len(ch_time_3f) >= 6:
+                item['Time_3f'] = float(ch_time_3f[2:]) + 60
+            else:
+                item['Time_3F'] = ch_time_3f
+
             # 騎手
             item['Jockey_name'] = div.select('./td[7]/a/text()').extract()[0]
             # 騎手重量

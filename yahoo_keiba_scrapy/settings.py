@@ -89,4 +89,4 @@ ROBOTSTXT_OBEY = True
 DOWNLOAD_DELAY = 5
 FEED_URI = './csv/keiba_result_data.csv'
 FEED_FORMAT = 'csv'
-FEED_EXPORT_FIELDS = ['Date', 'Venue', 'Race_no', 'Race_name', 'Distance', 'Order_of_finish', 'Frame_number', 'Horse_numbers', 'Horse_name', 'Sex', 'Age', 'Horse_weight','Time', 'D_horse_weight', 'Margin', 'Time_3F', 'Jockey_name', 'Load_weight', 'Odds_order', 'Odds', 'Trainer']
+FEED_EXPORT_FIELDS = ['Date', 'Venue', 'Race_no', 'Race_name', 'Surface', 'Distance', 'Order_of_finish', 'Frame_number', 'Horse_numbers', 'Horse_name', 'Sex', 'Age', 'Horse_weight','Time', 'D_horse_weight', 'Margin', 'Time_3F', 'Jockey_name', 'Load_weight', 'Odds_order', 'Odds', 'Trainer']
