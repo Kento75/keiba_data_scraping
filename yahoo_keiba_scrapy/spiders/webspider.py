@@ -1,4 +1,5 @@
 import re
+import pandas as pd
 from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors import LinkExtractor
 from scrapy.selector import HtmlXPathSelector
@@ -16,13 +17,11 @@ class PredictSpider(CrawlSpider):
     def __init__(self, *args, **kwargs):
         super(PredictSpider, self).__init__(*args, **kwargs)
 
-        f = open("./csv/url_list.csv")
-        urls = f.readlines()
-        f.close()
-
-        # 各要素の末尾についた改行文字 "\n" を削除
-        # 空行("\n" だけの行)も削除
-        self.start_urls = [url.rstrip("\n") for url in urls if url != "\n"]
+        df = pd.read_csv('./csv/url_list.csv', header=None)
+        print("デバッグ********************************************")
+        print(df[3])
+        print("デバッグ********************************************")
+        self.start_urls = df[3]
 
     # サーバー負荷を考慮してスクレイピング間隔の調整
     custom_settings = {
