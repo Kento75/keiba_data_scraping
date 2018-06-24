@@ -24,6 +24,7 @@ class PredictSpider(CrawlSpider):
         self.start_urls = df[3]
 
     # サーバー負荷を考慮してスクレイピング間隔の調整
+    # 5秒に一度リクエスト送信
     custom_settings = {
         "DOWNLOAD_DELAY": 5,
     }
@@ -109,8 +110,6 @@ class PredictSpider(CrawlSpider):
                 item['Margin'] = ''
 
             # 上り3F
-            #item['Time_3F'] = re.sub(r'[^0-9\.]', '', div.select('./td[6]/span/text()').extract()[0])
-
             ch_time_3f = re.sub(r'[^0-9\.]', '', div.select('./td[6]/span/text()').extract()[0])
 
             if len(ch_time_3f) >= 6:

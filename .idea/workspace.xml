@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3e217b4-9986-488c-a2e5-321c34b8b0fc" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/yahoo_keiba_scrapy.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/yahoo_keiba_scrapy.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yahoo_keiba_scrapy/spiders/webspider.py" beforeDir="false" afterPath="$PROJECT_DIR$/yahoo_keiba_scrapy/spiders/webspider.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,20 +17,14 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="webspider.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="webspider.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/yahoo_keiba_scrapy/spiders/webspider.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" selection-end-column="18" />
+            <state relative-caret-position="255">
+              <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -43,9 +41,9 @@
         <option value="$PROJECT_DIR$/csv/url_list.csv" />
         <option value="$PROJECT_DIR$/yahoo_keiba_scrapy/items.py" />
         <option value="$PROJECT_DIR$/yahoo_keiba_scrapy/settings.py" />
-        <option value="$PROJECT_DIR$/yahoo_keiba_scrapy/spiders/webspider.py" />
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/yahoo_keiba_scrapy/spiders/webspider.py" />
       </list>
     </option>
   </component>
@@ -127,17 +125,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="57" y="-4" width="1309" height="772" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19786096" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19717261" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32838038" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.249226" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -158,6 +156,20 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/yahoo_keiba_scrapy/spiders/webspider.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/yahoo_keiba_scrapy/spiders/webspider.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -200,9 +212,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/yahoo_keiba_scrapy/spiders/webspider.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/csv/keiba_result_data._20180331">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1156">
@@ -225,9 +234,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/yahoo_keiba_scrapy/spiders/webspider.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yahoo_keiba_scrapy/spiders/webspider.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1717">
           <caret line="101" lean-forward="true" selection-start-line="101" selection-end-line="101" />
@@ -240,9 +246,6 @@
           <caret line="338" lean-forward="true" selection-start-line="338" selection-end-line="338" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/yahoo_keiba_scrapy/spiders/webspider.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/yahoo_keiba_scrapy/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -259,9 +262,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/keiba_result_data.csv" />
-    <entry file="file://$PROJECT_DIR$/csv/url_list.csv.bk">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/yahoo_keiba_scrapy/items.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -290,13 +290,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/csv/url_list.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="178" selection-start-column="130" selection-end-column="178" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/csv/keiba_result_data.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -304,24 +297,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="43" selection-start-line="43" selection-end-line="43" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/csv/url_list.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="18" lean-forward="true" selection-start-line="5" selection-start-column="18" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="391">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/yahoo_keiba_scrapy/spiders/webspider.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" selection-end-column="18" />
+        <state relative-caret-position="255">
+          <caret line="26" column="18" selection-start-line="26" selection-start-column="18" selection-end-line="26" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
