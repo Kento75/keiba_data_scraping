@@ -18,9 +18,6 @@ class PredictSpider(CrawlSpider):
         super(PredictSpider, self).__init__(*args, **kwargs)
 
         df = pd.read_csv('./csv/url_list.csv', header=None)
-        print("デバッグ********************************************")
-        print(df[3])
-        print("デバッグ********************************************")
         self.start_urls = df[3]
 
     # サーバー負荷を考慮してスクレイピング間隔の調整
