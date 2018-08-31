@@ -11,7 +11,7 @@ keiba_url_getter」リポジトリで作成したCSVを元にスクレイピン�
 
 OS    ：Ubuntu16.0.4 LTS 64bit
 
-python：Python3.5.3、Python3.6.3
+python：Python3.5.3、Python3.6.5
 
 CPU   ：core i3 540
 
